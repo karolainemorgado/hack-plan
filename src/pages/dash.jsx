@@ -1,6 +1,7 @@
 import Navbar from '@/components/basics/Navbar';
 import LoginForm from '@/components/basics/LoginForm';
 import ItemList from '@/components/basics/ItemList';
+import { items } from '../../data/mockData';
 
 function Dash() {
 
