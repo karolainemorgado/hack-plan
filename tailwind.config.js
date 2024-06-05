@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'selector',
+  darkMode: "selector",
 
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +9,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        dark: {
+          background: "#000", // Fundo preto no modo escuro
+          text: "#fff", // Letras brancas no modo escuro
+          buttonBg: "#fff", // Fundo do botão branco no modo escuro
+          buttonText: "#000", // Letras pretas no botão no modo escuro
+        },
+        light: {
+          background: "#fff", // Fundo branco no modo claro
+          text: "#000", // Letras pretas no modo claro
+          buttonBg: "#000", // Fundo do botão preto no modo claro
+          buttonText: "#fff", // Letras brancas no botão no modo claro
+        },
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

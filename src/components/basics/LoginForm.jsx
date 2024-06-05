@@ -1,4 +1,3 @@
-// src/components/LoginForm.js
 import React, { useState } from 'react';
 import Input from './Input';
 import Button from './Button';
@@ -26,7 +25,9 @@ const LoginForm = ({ onSubmit }) => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <Button type="submit">Login</Button>
+      <Button 
+      // onClick={}
+      label={"Login"} />
     </form>
   );
 };
