@@ -24,6 +24,8 @@ function Dash() {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+
+    console.log('isDarkMode:', isDarkMode);
   };
 
   useEffect(() => {
@@ -40,9 +42,9 @@ function Dash() {
   return (
     <div>
       <Navbar />
+      <div className={`container mx-auto px-4 py-8 ${isDarkMode ? 'dark bg-black text-white' : 'bg-white text-black'}`}>
 
-      <div className="container mx-auto px-4 py-8
-      {isDarkMode ? 'dark' : ''}">
+
         <header>
         <h1>{isDarkMode ? 'Modo Escuro' : 'Modo Claro'}</h1>
         <ToggleSwitch isChecked={isDarkMode} onChange={toggleDarkMode} />
@@ -70,7 +72,7 @@ function Dash() {
           </p>
           {/* <Button onClick={closeModal}>Fechar Modal</Button>  */}
           {/* Botão para fechar o modal */}
-          <Button label={"Fechar Modal"} onClick={closeModal} />
+          <Button label={"Fechar Modal"} onClick={closeModal} isDarkMode={isDarkMode} />
         </Modal>
       </div>
     </div>

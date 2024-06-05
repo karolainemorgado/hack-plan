@@ -1,9 +1,11 @@
 // src/components/Card.js
 import React from 'react';
 
-const Card = ({ children, className = '' }) => (
-  <div className={`p-4 bg-white shadow rounded ${className}`}>
+const Card = ({ children, isDarkMode }) => (
+  <div className="p-4 bg-white shadow rounded">
     {children}
+    {isDarkMode ? 'bg-white text-black' : 'bg-black text-white'}
+     
   </div>
 );
 
