@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
-import axios from "axios";
-import Button from "@/components/Common/Button";
-import withAuth from "@/components/Auth/withAuth";
+import Button from "@/components/basics/Button";
 
 function GeneralSkills() {
-  const [user, setUser] = useState(null);
   const [softSkill, setSoftSkill] = useState([
     { name: "Analytic Thinking", checked: false },
     { name: "Problem-Solving", checked: false },
@@ -26,69 +23,54 @@ function GeneralSkills() {
     { name: "User Advocacy", checked: false },
     { name: "Conflict Resolution", checked: false },
     { name: "Project Management", checked: false },
+  ]);
 
-  ]);
   const [hardSkill, setHardSkill] = useState([
-    { "name": "JavaScript", "checked": false },
-    { "name": "Python", "checked": false },
-    { "name": "Java", "checked": false },
-    { "name": "C#", "checked": false },
-    { "name": "Ruby", "checked": false },
-    { "name": "PHP", "checked": false },
-    { "name": "React", "checked": false },
-    { "name": "Angular", "checked": false },
-    { "name": "Vue.js", "checked": false },
-    { "name": "Node.js", "checked": false },
-    { "name": "Django", "checked": false },
-    { "name": "Flask", "checked": false },
-    { "name": "Spring Boot", "checked": false },
-    { "name": "Ruby on Rails", "checked": false },
-    { "name": "ASP.NET", "checked": false },
-    { "name": "Laravel", "checked": false },
-    { "name": "Express.js", "checked": false },
-    { "name": "MongoDB", "checked": false },
-    { "name": "MySQL", "checked": false },
-    { "name": "PostgreSQL", "checked": false },
-    { "name": "HTML", "checked": false },
-    { "name": "CSS", "checked": false },
-    { "name": "TypeScript", "checked": false },
-    { "name": "Bootstrap", "checked": false },
-    { "name": "Sass", "checked": false },
-    { "name": "jQuery", "checked": false },
-    { "name": "SQL", "checked": false },
-    { "name": "NoSQL", "checked": false },
-    { "name": "SQLite", "checked": false },
-    { "name": "Redis", "checked": false },
-    { "name": "Oracle", "checked": false },
-    { "name": "DynamoDB", "checked": false },
-    { "name": "Swift", "checked": false },
-    { "name": "Kotlin", "checked": false },
-    { "name": "TensorFlow", "checked": false },
-    { "name": "PyTorch", "checked": false },
-    { "name": "Git", "checked": false },
-    { "name": "Docker", "checked": false },
-    { "name": "AWS", "checked": false },
-    { "name": "Azure", "checked": false },
-    { "name": "Google Cloud Platform", "checked": false }
+    { name: "JavaScript", checked: false },
+    { name: "Python", checked: false },
+    { name: "Java", checked: false },
+    { name: "C#", checked: false },
+    { name: "Ruby", checked: false },
+    { name: "PHP", checked: false },
+    { name: "React", checked: false },
+    { name: "Angular", checked: false },
+    { name: "Vue.js", checked: false },
+    { name: "Node.js", checked: false },
+    { name: "Django", checked: false },
+    { name: "Flask", checked: false },
+    { name: "Spring Boot", checked: false },
+    { name: "Ruby on Rails", checked: false },
+    { name: "ASP.NET", checked: false },
+    { name: "Laravel", checked: false },
+    { name: "Express.js", checked: false },
+    { name: "MongoDB", checked: false },
+    { name: "MySQL", checked: false },
+    { name: "PostgreSQL", checked: false },
+    { name: "HTML", checked: false },
+    { name: "CSS", checked: false },
+    { name: "TypeScript", checked: false },
+    { name: "Bootstrap", checked: false },
+    { name: "Sass", checked: false },
+    { name: "jQuery", checked: false },
+    { name: "SQL", checked: false },
+    { name: "NoSQL", checked: false },
+    { name: "SQLite", checked: false },
+    { name: "Redis", checked: false },
+    { name: "Oracle", checked: false },
+    { name: "DynamoDB", checked: false },
+    { name: "Swift", checked: false },
+    { name: "Kotlin", checked: false },
+    { name: "TensorFlow", checked: false },
+    { name: "PyTorch", checked: false },
+    { name: "Git", checked: false },
+    { name: "Docker", checked: false },
+    { name: "AWS", checked: false },
+    { name: "Azure", checked: false },
+    { name: "Google Cloud Platform", checked: false },
   ]);
+
   const [activeView, setActiveView] = useState("softSkill");
   const router = useRouter();
-
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-    if (storedUser) {
-      setUser(storedUser);
-      if (
-        storedUser.recruiterSkills &&
-        storedUser.recruiterSkills.jobSkills &&
-        storedUser.recruiterSkills.jobSkills.length > 0
-      ) {
-        router.push("/dashboard");
-      }
-    } else {
-      router.push("/auth");
-    }
-  }, [router]);
 
   const handleSkillClick = (skills, setSkills, index) => {
     setSkills(
@@ -99,7 +81,7 @@ function GeneralSkills() {
     );
   };
 
-  const handleContinue = async () => {
+  const handleContinue = () => {
     const selectedSoftSkills = softSkill.filter((skill) => skill.checked);
     const selectedHardSkills = hardSkill.filter((skill) => skill.checked);
 
@@ -114,42 +96,9 @@ function GeneralSkills() {
       ),
     };
 
-    try {
-      const token = localStorage.getItem("token");
-      if (!token) {
-        throw new Error("Token not found");
-      }
+    console.log("Selected Skills: ", selectedSkills.skills);
 
-      // Submit selected skills to the backend
-      await axios.post(
-        "/api/orderedCandidateSuggestions",
-        {
-          selectedSkills: selectedSkills.skills,
-          userId: user._id,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      // Update localStorage with the new skills
-      const updatedUser = {
-        ...user,
-        recruiterSkills: {
-          jobSkills: selectedSkills.skills,
-        },
-      };
-      localStorage.setItem("user", JSON.stringify(updatedUser));
-      setUser(updatedUser);
-
-      // Redirect to the candidate match page
-      router.push("/candidateMatch");
-    } catch (error) {
-      console.error("Error submitting skills:", error);
-      alert("Failed to continue. Please try again later.");
-    }
+    // Aqui você navegará para a próxima etapa ou enviará as habilidades selecionadas
   };
 
   const handleButtonClick = () => {
@@ -167,11 +116,11 @@ function GeneralSkills() {
           <>
             <div className="text-left mt-20">
               <h1 className="text-4xl font-semibold">
-                Mapping Your Soft Skills
+                Select Your Soft Skills
               </h1>
               <p className="text-base font-medium mt-6">
-                Identify your specific skills in critical thinking, problem
-                solving and strategic analysis.
+                Identify your specific skills in communication, teamwork,
+                problem-solving, and more.
               </p>
               <p className="text-base font-normal mt-2">
                 Select at least 5 skills.
@@ -196,12 +145,9 @@ function GeneralSkills() {
         ) : (
           <>
             <div className="text-left mt-6">
-              <h1 className="text-4xl font-semibold">
-                Hard Skills and Professional Attributes
-              </h1>
+              <h1 className="text-4xl font-semibold">Select Your Hard Skills</h1>
               <p className="text-base font-medium mt-6">
-                Assess your technical, collaborative, and professional skills to
-                build strong relationships.
+                Identify your technical skills in programming and development.
               </p>
               <p className="text-base font-normal mt-2">
                 Select at least 5 skills.
@@ -226,11 +172,11 @@ function GeneralSkills() {
         )}
       </div>
       <Button
-        label={activeView === "softSkill" ? "Continue" : "Discover my candidate!"}
+        label={activeView === "softSkill" ? "Continue" : "Submit Skills"}
         onClick={handleButtonClick}
       />
     </div>
   );
 }
 
-export default withAuth(GeneralSkills);
+export default GeneralSkills;

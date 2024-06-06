@@ -1,493 +1,1801 @@
+
 [
     {
-      "_id": "12345",
-      "name": "Michael Thompson",
-      "email": "michael.thompson@example.com",
-      "career": "Backend Developer",
-      "city": "Lisbon, PT",
-      "bio": "Skilled backend developer with a strong background in server-side logic and database management.",
-      "profile_seen": 5,
-      "softSkills": [
-        "Problem-Solving",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Attention to Detail",
-        "Technical Support"
-      ],
-      "projects": [
-        {
-          "projectName": "Inventory Management System",
-          "projectDate": "14 March",
-          "hardSkills": [
-            "Java",
-            "Spring Boot",
-            "MySQL"
-          ]
-        },
-        {
-          "projectName": "Customer Management API",
-          "projectDate": "8 July",
-          "hardSkills": [
-            "Node.js",
-            "Express.js",
-            "MongoDB"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Problem-Solving",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Attention to Detail",
-        "Technical Support",
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "Node.js",
-        "Express.js",
-        "MongoDB"
-      ]
-    },
-    {
-      "_id": "23456",
-      "name": "Sophia Wilson",
-      "email": "sophia.wilson@example.com",
-      "career": "Frontend Developer",
-      "city": "Lisbon, PT",
-      "bio": "Creative frontend developer with a passion for building intuitive user interfaces.",
-      "profile_seen": 7,
-      "softSkills": [
-        "Communication",
-        "Team Collaboration",
-        "Adaptability",
-        "Time Management",
-        "Self-learning"
-      ],
-      "projects": [
-        {
-          "projectName": "E-commerce Website",
-          "projectDate": "21 April",
-          "hardSkills": [
+        "_id": "1",
+        "name": "Emily Lewis",
+        "email": "emily.lewis@example.com",
+        "career": "Frontend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Creative frontend developer with a passion for building intuitive user interfaces.",
+        "profile_seen": 7,
+        "softSkills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Website",
+                "projectDate": "21, April",
+                "hardSkills": [
+                    "JavaScript",
+                    "React",
+                    "CSS"
+                ]
+            },
+            {
+                "projectName": "Company Portfolio Site",
+                "projectDate": "18, October",
+                "hardSkills": [
+                    "HTML",
+                    "Vue.js",
+                    "Sass"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail",
             "JavaScript",
             "React",
-            "CSS"
-          ]
-        },
-        {
-          "projectName": "Company Portfolio Site",
-          "projectDate": "18 October",
-          "hardSkills": [
+            "CSS",
             "HTML",
             "Vue.js",
             "Sass"
-          ]
-        }
-      ],
-      "general_skills": [
+        ]
+    },
+    {
+        "_id": "2",
+        "name": "Sophia Wilson",
+        "email": "sophia.wilson@example.com",
+        "career": "Frontend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Creative frontend developer with a passion for building intuitive user interfaces.",
+        "profile_seen": 7,
+        "softSkills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Website",
+                "projectDate": "21, April",
+                "hardSkills": [
+                    "JavaScript",
+                    "React",
+                    "CSS"
+                ]
+            },
+            {
+                "projectName": "Company Portfolio Site",
+                "projectDate": "18, October",
+                "hardSkills": [
+                    "HTML",
+                    "Vue.js",
+                    "Sass"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail",
+            "JavaScript",
+            "React",
+            "CSS",
+            "HTML",
+            "Vue.js",
+            "Sass"
+        ]
+    },
+    {
+        "_id": "3",
+        "name": "Oliver Johnson",
+        "email": "oliver.johnson@example.com",
+        "career": "Frontend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Passionate frontend developer dedicated to crafting exceptional user experiences.",
+        "profile_seen": 9,
+        "softSkills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail"
+        ],
+        "projects": [
+            {
+                "projectName": "Travel Blog",
+                "projectDate": "10, March",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "Sass"
+                ]
+            },
+            {
+                "projectName": "Portfolio Website",
+                "projectDate": "15, July",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Vue.js",
+                    "Bootstrap"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Sass",
+            "Vue.js",
+            "Bootstrap"
+        ]
+    },
+    {
+        "_id": "4",
+        "name": "Amelia Brown",
+        "email": "amelia.brown@example.com",
+        "career": "Frontend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Frontend developer with a keen eye for design and a passion for creating engaging user interfaces.",
+        "profile_seen": 8,
+        "softSkills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail"
+        ],
+        "projects": [
+            {
+                "projectName": "Fashion E-commerce Site",
+                "projectDate": "12, February",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "Sass"
+                ]
+            },
+            {
+                "projectName": "Recipe Sharing Platform",
+                "projectDate": "20, August",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Vue.js",
+                    "Bootstrap"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Sass",
+            "Vue.js",
+            "Bootstrap"
+        ]
+    },
+    {
+        "_id": "5",
+        "name": "Liam Davis",
+        "email": "liam.davis@example.com",
+        "career": "Frontend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Frontend developer passionate about creating responsive and intuitive user interfaces.",
+        "profile_seen": 6,
+        "softSkills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail"
+        ],
+        "projects": [
+            {
+                "projectName": "Travel Blog",
+                "projectDate": "10, March",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "Sass"
+                ]
+            },
+            {
+                "projectName": "Portfolio Website",
+                "projectDate": "15, July",
+                "hardSkills": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Vue.js",
+                    "Bootstrap"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Communication",
+            "Team Collaboration",
+            "Adaptability",
+            "Time Management",
+            "Self-learning",
+            "Critical Thinking",
+            "Attention to Detail",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Sass",
+            "Vue.js",
+            "Bootstrap"
+        ]
+    },
+{
+    "_id": "6",
+    "name": "Charlotte White",
+    "email": "charlotte.white@example.com",
+    "career": "Frontend Developer",
+    "city": "Lisbon, PT",
+    "bio": "Passionate frontend developer with a focus on creating elegant and responsive user interfaces.",
+    "profile_seen": 8,
+    "softSkills": [
         "Communication",
         "Team Collaboration",
         "Adaptability",
         "Time Management",
         "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail"
+    ],
+    "projects": [
+        {
+            "projectName": "Online Portfolio",
+            "projectDate": "08, February",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Bootstrap"
+            ]
+        },
+        {
+            "projectName": "Recipe App",
+            "projectDate": "20, July",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vue.js",
+                "Sass"
+            ]
+        }
+    ],
+    "general_skills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail",
+        "HTML",
+        "CSS",
         "JavaScript",
         "React",
-        "CSS",
-        "HTML",
+        "Bootstrap",
         "Vue.js",
         "Sass"
-      ]
-    },
-    {
-      "_id": "34567",
-      "name": "James Anderson",
-      "email": "james.anderson@example.com",
-      "career": "Full Stack Developer",
-      "city": "Lisbon, PT",
-      "bio": "Versatile full stack developer with experience in both frontend and backend technologies.",
-      "profile_seen": 11,
-      "softSkills": [
-        "Problem-Solving",
+    ]
+},
+{
+    "_id": "7",
+    "name": "Mia Evans",
+    "email": "mia.evans@example.com",
+    "career": "Frontend Developer",
+    "city": "Lisbon, PT",
+    "bio": "Frontend developer with a focus on creating elegant and user-friendly interfaces.",
+    "profile_seen": 10,
+    "softSkills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
         "Critical Thinking",
-        "Debugging",
-        "User Advocacy",
-        "Project Management"
-      ],
-      "projects": [
+        "Attention to Detail"
+    ],
+    "projects": [
         {
-          "projectName": "Project Management Tool",
-          "projectDate": "12 January",
-          "hardSkills": [
-            "JavaScript",
-            "Node.js",
-            "PostgreSQL"
-          ]
+            "projectName": "Restaurant Website",
+            "projectDate": "05, February",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Bootstrap"
+            ]
         },
         {
-          "projectName": "Social Media Platform",
-          "projectDate": "30 May",
-          "hardSkills": [
+            "projectName": "Portfolio Site",
+            "projectDate": "20, June",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vue.js",
+                "Sass"
+            ]
+        }
+    ],
+    "general_skills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Bootstrap",
+        "Vue.js",
+        "Sass"
+    ]
+},
+{
+    "_id": "8",
+    "name": "Harper Clark",
+    "email": "harper.clark@example.com",
+    "career": "Frontend Developer",
+    "city": "Lisbon, PT",
+    "bio": "Frontend developer passionate about crafting immersive and interactive web experiences.",
+    "profile_seen": 11,
+    "softSkills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail"
+    ],
+    "projects": [
+        {
+            "projectName": "E-commerce Platform",
+            "projectDate": "15, April",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Sass"
+            ]
+        },
+        {
+            "projectName": "Portfolio Website",
+            "projectDate": "25, September",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vue.js",
+                "Bootstrap"
+            ]
+        }
+    ],
+    "general_skills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Sass",
+        "Vue.js",
+        "Bootstrap"
+    ]
+},
+{
+    "_id": "9",
+    "name": "Avery Turner",
+    "email": "avery.turner@example.com",
+    "career": "Frontend Developer",
+    "city": "Lisbon, PT",
+    "bio": "Passionate frontend developer with a focus on creating elegant and responsive user interfaces.",
+    "profile_seen": 8,
+    "softSkills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail"
+    ],
+    "projects": [
+        {
+            "projectName": "Online Portfolio",
+            "projectDate": "08, February",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Bootstrap"
+            ]
+        },
+        {
+            "projectName": "Recipe App",
+            "projectDate": "20, July",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vue.js",
+                "Sass"
+            ]
+        }
+    ],
+    "general_skills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Bootstrap",
+        "Vue.js",
+        "Sass"
+    ]
+},
+{
+    "_id": "10",
+    "name": "Evelyn Parker",
+    "email": "evelyn.parker@example.com",
+    "career": "Frontend Developer",
+    "city": "Lisbon, PT",
+    "bio": "Frontend developer with a passion for creating visually appealing and user-friendly websites.",
+    "profile_seen": 9,
+    "softSkills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail"
+    ],
+    "projects": [
+        {
+            "projectName": "Fashion Blog",
+            "projectDate": "12, March",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Sass"
+            ]
+        },
+        {
+            "projectName": "Portfolio Website",
+            "projectDate": "25, September",
+            "hardSkills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vue.js",
+                "Bootstrap"
+            ]
+        }
+    ],
+    "general_skills": [
+        "Communication",
+        "Team Collaboration",
+        "Adaptability",
+        "Time Management",
+        "Self-learning",
+        "Critical Thinking",
+        "Attention to Detail",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Sass",
+        "Vue.js",
+        "Bootstrap"
+    ]
+},
+ {
+        "_id": "13",
+        "name": "William Taylor",
+        "email": "william.taylor@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer specializing in building robust and scalable server-side applications.",
+        "profile_seen": 12,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "14",
+        "name": "James Johnson",
+        "email": "james.johnson@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with a passion for building efficient and scalable server-side applications.",
+        "profile_seen": 11,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
             "Python",
             "Django",
-            "HTML"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Problem-Solving",
-        "Critical Thinking",
-        "Debugging",
-        "User Advocacy",
-        "Project Management",
-        "JavaScript",
-        "Node.js",
-        "PostgreSQL",
-        "Python",
-        "Django",
-        "HTML"
-      ]
-    },
-    {
-      "_id": "45678",
-      "name": "Olivia Martinez",
-      "email": "olivia.martinez@example.com",
-      "career": "Mobile Developer",
-      "city": "Lisbon, PT",
-      "bio": "Dedicated mobile developer with a focus on creating user-friendly mobile applications.",
-      "profile_seen": 3,
-      "softSkills": [
-        "Attention to Detail",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Problem-Solving",
-        "Patience"
-      ],
-      "projects": [
-        {
-          "projectName": "Fitness Tracking App",
-          "projectDate": "6 June",
-          "hardSkills": [
-            "Swift",
-            "Kotlin",
-            "SQLite"
-          ]
-        },
-        {
-          "projectName": "Recipe App",
-          "projectDate": "14 August",
-          "hardSkills": [
-            "Java",
-            "React Native",
-            "Firebase"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Attention to Detail",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Problem-Solving",
-        "Patience",
-        "Swift",
-        "Kotlin",
-        "SQLite",
-        "Java",
-        "React Native",
-        "Firebase"
-      ]
-    },
-    {
-      "_id": "56789",
-      "name": "William Lee",
-      "email": "william.lee@example.com",
-      "career": "DevOps Engineer",
-      "city": "Lisbon, PT",
-      "bio": "Experienced DevOps engineer skilled in automating infrastructure and deployment processes.",
-      "profile_seen": 9,
-      "softSkills": [
-        "Adaptability",
-        "Communication",
-        "Conflict Resolution",
-        "Accountability",
-        "Time Management"
-      ],
-      "projects": [
-        {
-          "projectName": "CI/CD Pipeline Implementation",
-          "projectDate": "15 July",
-          "hardSkills": [
-            "Docker",
-            "Kubernetes",
-            "AWS"
-          ]
-        },
-        {
-          "projectName": "Infrastructure Automation",
-          "projectDate": "22 September",
-          "hardSkills": [
-            "Terraform",
-            "Azure",
-            "Git"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Adaptability",
-        "Communication",
-        "Conflict Resolution",
-        "Accountability",
-        "Time Management",
-        "Docker",
-        "Kubernetes",
-        "AWS",
-        "Terraform",
-        "Azure",
-        "Git"
-      ]
-    },
-    {
-      "_id": "67890",
-      "name": "Emma Taylor",
-      "email": "emma.taylor@example.com",
-      "career": "Data Scientist",
-      "city": "Lisbon, PT",
-      "bio": "Data scientist with a passion for uncovering insights through data analysis and machine learning.",
-      "profile_seen": 6,
-      "softSkills": [
-        "Data Interpretation",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Problem-Solving",
-        "Self-learning"
-      ],
-      "projects": [
-        {
-          "projectName": "Predictive Analytics System",
-          "projectDate": "10 February",
-          "hardSkills": [
-            "Python",
-            "TensorFlow",
-            "SQL"
-          ]
-        },
-        {
-          "projectName": "Customer Segmentation",
-          "projectDate": "29 November",
-          "hardSkills": [
-            "R",
-            "Machine Learning",
-            "NoSQL"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Data Interpretation",
-        "Analytic Thinking",
-        "Logical Thinking",
-        "Problem-Solving",
-        "Self-learning",
-        "Python",
-        "TensorFlow",
-        "SQL",
-        "R",
-        "Machine Learning",
-        "NoSQL"
-      ]
-    },
-    {
-      "_id": "78901",
-      "name": "Ethan White",
-      "email": "ethan.white@example.com",
-      "career": "Machine Learning Engineer",
-      "city": "Lisbon, PT",
-      "bio": "Machine learning engineer focused on developing intelligent algorithms and data-driven solutions.",
-      "profile_seen": 12,
-      "softSkills": [
-        "Critical Thinking",
-        "Analytic Thinking",
-        "Problem-Solving",
-        "Attention to Detail",
-        "Self-learning"
-      ],
-      "projects": [
-        {
-          "projectName": "Recommendation System",
-          "projectDate": "9 March",
-          "hardSkills": [
-            "Python",
-            "PyTorch",
-            "SQL"
-          ]
-        },
-        {
-          "projectName": "Image Recognition System",
-          "projectDate": "23 December",
-          "hardSkills": [
-            "TensorFlow",
-            "Keras",
-            "NoSQL"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Critical Thinking",
-        "Analytic Thinking",
-        "Problem-Solving",
-        "Attention to Detail",
-        "Self-learning",
-        "Python",
-        "PyTorch",
-        "SQL",
-        "TensorFlow",
-        "Keras",
-        "NoSQL"
-      ]
-    },
-    {
-      "_id": "89012",
-      "name": "Ava Harris",
-      "email": "ava.harris@example.com",
-      "career": "Software Engineer",
-      "city": "Lisbon, PT",
-      "bio": "Software engineer with a talent for developing efficient and scalable applications.",
-      "profile_seen": 4,
-      "softSkills": [
-        "Communication",
-        "Team Collaboration",
-        "Adaptability",
-        "Time Management",
-        "Critical Thinking"
-      ],
-      "projects": [
-        {
-          "projectName": "Financial Management Software",
-          "projectDate": "5 May",
-          "hardSkills": [
-            "JavaScript",
-            "Angular",
-            "Node.js"
-          ]
-        },
-        {
-          "projectName": "Online Booking System",
-          "projectDate": "16 August",
-          "hardSkills": [
-            "Python",
-            "Flask",
-            "PostgreSQL"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Communication",
-        "Team Collaboration",
-        "Adaptability",
-        "Time Management",
-        "Critical Thinking",
-        "JavaScript",
-        "Angular",
-        "Node.js",
-        "Python",
-        "Flask",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "_id": "90123",
-      "name": "Isabella Martin",
-      "email": "isabella.martin@example.com",
-      "career": "Cybersecurity Specialist",
-      "city": "Lisbon, PT",
-      "bio": "Cybersecurity specialist with expertise in securing systems and protecting sensitive data.",
-      "profile_seen": 13,
-      "softSkills": [
-        "Analytic Thinking",
-        "Problem-Solving",
-        "Attention to Detail",
-        "Critical Thinking",
-        "Documentation"
-      ],
-      "projects": [
-        {
-          "projectName": "Network Security Enhancement",
-          "projectDate": "3 April",
-          "hardSkills": [
-            "Python",
-            "SQL",
-            "AWS"
-          ]
-        },
-        {
-          "projectName": "Data Encryption Project",
-          "projectDate": "19 October",
-          "hardSkills": [
-            "Java",
-            "Oracle",
-            "Azure"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Analytic Thinking",
-        "Problem-Solving",
-        "Attention to Detail",
-        "Critical Thinking",
-        "Documentation",
-        "Python",
-        "SQL",
-        "AWS",
-        "Java",
-        "Oracle",
-        "Azure"
-      ]
-    },
-    {
-      "_id": "01234",
-      "name": "Mia Clark",
-      "email": "mia.clark@example.com",
-      "career": "Blockchain Developer",
-      "city": "Lisbon, PT",
-      "bio": "Blockchain developer with a focus on developing decentralized applications and smart contracts.",
-      "profile_seen": 15,
-      "softSkills": [
-        "Problem-Solving",
-        "Analytic Thinking",
-        "Attention to Detail",
-        "Critical Thinking",
-        "Self-learning"
-      ],
-      "projects": [
-        {
-          "projectName": "Decentralized Finance Platform",
-          "projectDate": "13 July",
-          "hardSkills": [
-            "JavaScript",
+            "PostgreSQL",
             "Node.js",
-            "SQL"
-          ]
-        },
-        {
-          "projectName": "Smart Contract Development",
-          "projectDate": "28 November",
-          "hardSkills": [
-            "Solidity",
-            "Ethereum",
-            "Docker"
-          ]
-        }
-      ],
-      "general_skills": [
-        "Problem-Solving",
-        "Analytic Thinking",
-        "Attention to Detail",
-        "Critical Thinking",
-        "Self-learning",
-        "JavaScript",
-        "Node.js",
-        "SQL",
-        "Solidity",
-        "Ethereum",
-        "Docker"
-      ]
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "15",
+        "name": "Daniel Martinez",
+        "email": "daniel.martinez@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with expertise in designing and implementing scalable server-side solutions.",
+        "profile_seen": 14,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "16",
+        "name": "Matthew Brown",
+        "email": "matthew.brown@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer proficient in building high-performance server-side applications.",
+        "profile_seen": 10,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "17",
+        "name": "Joseph Lee",
+        "email": "joseph.lee@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer specializing in creating efficient and scalable server-side applications.",
+        "profile_seen": 13,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+
+    {
+        "_id": "13",
+        "name": "William Taylor",
+        "email": "william.taylor@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer specializing in building robust and scalable server-side applications.",
+        "profile_seen": 12,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "14",
+        "name": "James Johnson",
+        "email": "james.johnson@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with a passion for building efficient and scalable server-side applications.",
+        "profile_seen": 11,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "15",
+        "name": "Daniel Martinez",
+        "email": "daniel.martinez@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with expertise in designing and implementing scalable server-side solutions.",
+        "profile_seen": 14,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "16",
+        "name": "Matthew Brown",
+        "email": "matthew.brown@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer proficient in building high-performance server-side applications.",
+        "profile_seen": 10,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "17",
+        "name": "Joseph Lee",
+        "email": "joseph.lee@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer specializing in creating efficient and scalable server-side applications.",
+        "profile_seen": 13,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "18",
+        "name": "Michael Wilson",
+        "email": "michael.wilson@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer proficient in building high-performance server-side applications.",
+        "profile_seen": 10,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "19",
+        "name": "David Garcia",
+        "email": "david.garcia@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with a passion for building scalable and efficient server-side solutions.",
+        "profile_seen": 11,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "20",
+        "name": "Andrew Rodriguez",
+        "email": "andrew.rodriguez@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced backend developer specializing in designing and implementing scalable server-side applications.",
+        "profile_seen": 14,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "21",
+        "name": "Joshua Martinez",
+        "email": "joshua.martinez@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with expertise in building scalable and robust server-side applications.",
+        "profile_seen": 10,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking API",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "22",
+        "name": "Christopher Moore",
+        "email": "christopher.moore@example.com",
+        "career": "Backend Developer",
+        "city": "Lisbon, PT",
+        "bio": "Backend developer with a focus on designing and implementing scalable and efficient server-side solutions.",
+        "profile_seen": 12,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Inventory Management System",
+                "projectDate": "14, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL"
+                ]
+            },
+            {
+                "projectName": "Customer Management API",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    },
+
+    {
+        "_id": "23",
+        "name": "Oliver Martinez",
+        "email": "oliver.martinez@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced fullstack developer proficient in both frontend and backend technologies, with a passion for creating comprehensive web solutions.",
+        "profile_seen": 13,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "24",
+        "name": "Ethan Taylor",
+        "email": "ethan.taylor@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Fullstack developer with expertise in both frontend and backend technologies, dedicated to delivering high-quality web applications.",
+        "profile_seen": 12,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "Online Marketplace",
+                "projectDate": "15, March",
+                "hardSkills": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL",
+                    "React",
+                    "Node.js"
+                ]
+            },
+            {
+                "projectName": "Social Media Platform",
+                "projectDate": "8, July",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL",
+                    "React",
+                    "Node.js"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "React",
+            "Node.js",
+            "Python",
+            "Django",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "_id": "25",
+        "name": "Alexander Clark",
+        "email": "alexander.clark@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Passionate fullstack developer with expertise in both frontend and backend development, dedicated to creating innovative web solutions.",
+        "profile_seen": 11,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "26",
+        "name": "Benjamin Rodriguez",
+        "email": "benjamin.rodriguez@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Fullstack developer specializing in both frontend and backend development, with a focus on delivering scalable and efficient web applications.",
+        "profile_seen": 14,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+
+    {
+        "_id": "27",
+        "name": "Michael Thompson",
+        "email": "michael.thompson@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Skilled fullstack developer with expertise in both frontend and backend technologies, committed to delivering high-quality web solutions.",
+        "profile_seen": 16,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "28",
+        "name": "Sophia Wilson",
+        "email": "sophia.wilson@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Experienced fullstack developer proficient in both frontend and backend technologies, dedicated to creating innovative web applications.",
+        "profile_seen": 18,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "29",
+        "name": "Olivia Brown",
+        "email": "olivia.brown@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Fullstack developer with expertise in both frontend and backend technologies, dedicated to delivering scalable and efficient web applications.",
+        "profile_seen": 17,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "_id": "30",
+        "name": "Liam Jones",
+        "email": "liam.jones@example.com",
+        "career": "Fullstack Developer",
+        "city": "Lisbon, PT",
+        "bio": "Passionate fullstack developer with expertise in both frontend and backend technologies, committed to delivering innovative web solutions.",
+        "profile_seen": 15,
+        "softSkills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability"
+        ],
+        "projects": [
+            {
+                "projectName": "E-commerce Platform",
+                "projectDate": "10, April",
+                "hardSkills": [
+                    "Python",
+                    "Django",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "projectName": "Social Networking Site",
+                "projectDate": "5, September",
+                "hardSkills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "general_skills": [
+            "Problem-Solving",
+            "Analytic Thinking",
+            "Logical Thinking",
+            "Attention to Detail",
+            "Technical Support",
+            "Communication",
+            "Adaptability",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
     }
-  ]
-  
+]
