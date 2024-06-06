@@ -14,6 +14,14 @@ function Dash() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
+
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -24,8 +32,6 @@ function Dash() {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-
-    console.log('isDarkMode:', isDarkMode);
   };
 
   useEffect(() => {
@@ -40,41 +46,34 @@ function Dash() {
   };
 
   return (
-    <div>
+    <div className={`min-h-screen ${isDarkMode ? 'dark' : ''} bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text p-4`}>
       <Navbar />
-      <div className={`container mx-auto px-4 py-8 ${isDarkMode ? 'dark bg-black text-white' : 'bg-white text-black'}`}>
-
-
-        <header>
-        <h1>{isDarkMode ? 'Modo Escuro' : 'Modo Claro'}</h1>
+      <header className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          {isDarkMode ? 'Modo Escuro' : 'Modo Claro'}
+        </h1>
         <ToggleSwitch isChecked={isDarkMode} onChange={toggleDarkMode} />
       </header>
-        <div className="max-w-lg mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-8">
-            Bem-vindo ao meu projeto Next.js com Tailwind CSS
-          </h1>
-          <LoginForm onSubmit={handleLogin} />
-        </div>
-
-        <div className="mt-12">
-          {loading ? <Spinner /> : <ItemList items={items} />}
-        </div>
-        <Checkbox />
-
-        <Button label={"Abrir modal"} onClick={openModal} />
-        {/* Botão para abrir o modal */}
-
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          {/* Conteúdo do seu modal */}
-          <h2>Título do Modal</h2>
-          <p>
-            Este é o conteúdo do modal. Você pode adicionar qualquer coisa aqui.
-          </p>
-          {/* <Button onClick={closeModal}>Fechar Modal</Button>  */}
-          {/* Botão para fechar o modal */}
-          <Button label={"Fechar Modal"} onClick={closeModal} isDarkMode={isDarkMode} />
-        </Modal>
+      <div className="max-w-lg mx-auto">
+        <LoginForm onSubmit={handleLogin} isDarkMode={isDarkMode} />
       </div>
+
+      <div className="mt-12">
+        {loading ? <Spinner /> : <ItemList items={items} isDarkMode={isDarkMode} />}
+      </div>
+      <Checkbox />
+
+      <Button label={"Abrir modal"} onClick={openModal} isDarkMode={isDarkMode} />
+      {/* Botão para abrir o modal */}
+
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        {/* Conteúdo do seu modal */}
+        <h2>Título do Modal</h2>
+        <p>
+          Este é o conteúdo do modal. Você pode adicionar qualquer coisa aqui.
+        </p>
+        <Button label={"Fechar Modal"} onClick={closeModal} isDarkMode={isDarkMode} />
+      </Modal>
     </div>
   );
 }

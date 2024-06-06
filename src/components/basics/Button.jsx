@@ -1,18 +1,17 @@
-import React from "react" 
-export default function Button({onClick, label, isDarkMode}) {
-  return (
+import React from "react";
 
-    <div className="w-full max-w-md mt-3"> 
-    {isDarkMode ? 'bg-white text-black' : 'bg-black text-white'} 
+const Button = ({ onClick, label }) => {
+  return (
+    <div className="w-full max-w-md mt-3">
       <button
-        type="submit"
-        className="w-full mt-6 h-14 
-        rounded-3xl bg-black focus:outline-none text-white"
+        type="button" // Alterei para "button" pois o tipo "submit" é geralmente usado em formulários
+        className="w-full mt-6 h-14 rounded-3xl focus:outline-none bg-light-buttonBg text-light-buttonText dark:bg-dark-buttonBg dark:text-dark-buttonText"
         onClick={onClick}
       >
-{label}      
- 
-</button>
-</div>
-  )
-}
+        {label}
+      </button>
+    </div>
+  );
+};
+
+export default Button;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Input from './Input';
 import Button from './Button';
 
-const LoginForm = ({ onSubmit }) => {
+const LoginForm = ({ onSubmit, isDarkMode }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,16 +18,19 @@ const LoginForm = ({ onSubmit }) => {
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        isDarkMode={isDarkMode}
       />
       <Input
         type="password"
         placeholder="Senha"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        isDarkMode={isDarkMode}
       />
       <Button 
-      // onClick={}
-      label={"Login"} />
+        label={"Login"}
+        isDarkMode={isDarkMode}
+      />
     </form>
   );
 };
