@@ -1,5 +1,5 @@
 import React from "react";
-import CandidateSuggestion from "@/components/candidateSuggestion";
+import CandidateSuggestion from "@/components/CandidateSuggestion";
 
 export default function Contact() {
     return (

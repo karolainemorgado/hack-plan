@@ -6,7 +6,6 @@ console.log(candidateJSON)
 
 const Candidato = ({ candidate }) => {
   const {
-    _id,
     name,
     email,
     career,
@@ -23,9 +22,6 @@ const Candidato = ({ candidate }) => {
   return (
     <div className="candidato">
       <h2>{name}</h2>
-      {/* <p>
-        <strong>ID:</strong> {_id}
-      </p> */}
       <p>
         <strong>Email:</strong> {email}
       </p>
@@ -39,15 +35,12 @@ const Candidato = ({ candidate }) => {
         <strong>Bio:</strong> {bio}
       </p>
       <p>
-        <strong>Profile Seen:</strong>  
+        <strong>Profile Seen:</strong>  {profile_seen}
       </p>
       <p>
         <strong>Number of Projects:</strong> {projectCount}
       </p>
       
-
-
-
       <div>
         <h3>Projects:</h3>
         <ul>
