@@ -6,3 +6,18 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+
+// import React from "react";
+// import { FavoritesProvider } from "../contexts/FavoritesContexts";
+// import ChooseCandidate from "../pages/chooseCandidate/[career]";
+
+// function App() {
+//   return (
+//     <FavoritesProvider>
+//       <ChooseCandidate />
+//     </FavoritesProvider>
+//   );
+// }
+
+// export default App;

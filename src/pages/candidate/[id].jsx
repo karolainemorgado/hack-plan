@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import candidateJSON from "../../../data/candidate.json"
-import Candidato from "@/components/teste";
+import Candidato from "@/components/Candidato";
 import { useParams } from "next/navigation";
 
 const TestePage = () => {
